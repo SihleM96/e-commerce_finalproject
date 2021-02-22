@@ -1,0 +1,98 @@
+
+.head-one{
+    border-top: 0.5px solid #797d62;
+    border-bottom: 0.5px solid #797d62;
+    width: 89%;
+    margin: 20px 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .head-one{
+        border-top: 0.5px solid #797d62;
+        border-bottom: 0.5px solid #797d62;
+        width: 70%;
+        margin: 20px 70px;
+    }
+}
+
+
+  .feature-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .features {
+    display: flex; 
+    margin: 20px;
+  }
+
+  .features > img {
+    padding: 0px 20px;
+  }
+
+
+/* Media query to change display options of featured products */
+@media screen and (max-width: 768px) {
+    .features {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+    .features > div,
+    .features > img {
+      width: 100%;
+    }
+}
+
+
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .container {
+    display: flex; 
+    margin: 20px;
+  }
+
+  .container > img {
+    padding: 0px 20px;
+  }
+
+
+
+/* Media query to change display options of featured products */
+@media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+    .container > div,
+    .container > img {
+      width: 100%;
+    }
+}
+
+.overlay{
+  text-align: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+
+}
+ 
+
+
