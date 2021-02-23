@@ -11,36 +11,52 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     animation: backgroundTransition 10s linear infinite;
     transition: all 0.3s linear;
     background-image: url("../img/header1.jpg");
 
 }
 
+
   @keyframes backgroundTransition {
     0% {
       background-image: url("../img/header1.jpg");
     }
-    33%{
+    60%{
       background-image: url("../img/header2.jpg");
     }
-    66%{
+    90%{
       background-image: url("../img/header3.jpg");
     }
   }
   
 
-.landing h1{
-    margin: 0px 80px;
+.landing > h1{
+    margin-top: 160px;
+    margin-left: 80px;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+
 }
 
+
+.landing > p{
+  color: white;
+  margin-left: 80px;
+}
+
+
 .landing >button{
-    margin: 50px 80px;
-    width: 120px;
+    margin: 20px 80px;
+    width: 130px;
     height: 30px;
     border-radius: 30px;
-    background: #797d62 solid 2px;
-    
+    border:1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
 }
 
