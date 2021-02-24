@@ -1,0 +1,33 @@
+.login-page{
+    width: 300px;
+    margin: auto;
+}
+
+.form{
+    background-color: rgb(143, 138, 127);
+    padding: 20px;
+}
+
+.form .reg-butt{
+    cursor: pointer;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.form .message{
+    color: white;
+}
+
+.form .message a{
+    text-decoration: none;
+}
+
+
+.login a{
+    text-decoration: none;
+}
+
+.form .login{
+    display: none;
+}

@@ -30,45 +30,183 @@
 
       <button class="hamburger" onclick="toggleNav()">Hamburger</button>
     </nav>
-    
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <img src="./assets/img/logo.svg" alt="logo" class="logo" />
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="shop.html">Shop</a></li>
+        <li class="nav-link"><a href="register.html">Login/Register</a></li>
+        <li class="nav-link"><a href="#">MyCart</a></li>
+      </ul>
+
+      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+    </nav>
+    <!-- Landing -->
+    <header class="landing">
+      <h1>Pottery<br>Made With Love</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Curabitur cursus ex at ipsum auctor auctor.</p>
+      <button>View Products</button>
+    </header>
     <!-- featured items -->
     <div class="head-one">
-      <h3>Featured Items</h3>
+      <h3>Vase</h3>
       </div>
   
       <section class="feature-wrapper" id="feature-wrapper">
           <div class=features>
   
           <div>
-              <img src="./assets/img/bowl1.jpg" width="300px" height="220px"/>
+         
+              <img src="./assets/img/vase1.jpg" width="300px" height="220px"/>
               <h2>Night Skies</h2>
               <h4>Bowls</h4>
               <button>View Item</button>
           </div>
-  
+        
+          
           <div>
-              <img src="./assets/img/vase2.jpg" width="250px" height="220px" />
+              <img src="./assets/img/vase2.jpg" width="300px" height="220px" />
               <h2>Hollow Lily</h2>
               <h4>Vase</h4>
               <button>View Item</button>
           </div>
   
           <div> 
-              <img src="./assets/img/cup3.jpg" width="300px" height="220px"/>
+              <img src="./assets/img/vase3.jpg" width="300px" height="220px"/>
               <h2>Misty Mug</h2>
               <h4>Cups</h4>
               <button>View Item</button>
           </div>
   
           <div>
-          <img src="./assets/img/vase1.jpg" width="300px" height="220px"/>
+          <img src="./assets/img/vase4.jpg" width="300px" height="220px"/>
           <h2>Shaka</h2>
           <h4>Vase</h4>
           <button>View Item</button>
           </div>
       </div>
-  
+
+      <div class="head-one">
+        <h3>Bowls</h3>
+        </div>
+
+
+      <div class=features>
+      <div>
+        <img src="./assets/img/bowl1.jpg" width="300px" height="220px"/>
+        <h2>Shaka</h2>
+        <h4>Vase</h4>
+        <button>View Item</button>
+        </div>
+
+        <div>
+          <img src="./assets/img/bowl2.jpg" width="300px" height="220px"/>
+          <h2>Shaka</h2>
+          <h4>Vase</h4>
+          <button>View Item</button>
+          </div>
+
+          <div>
+            <img src="./assets/img/bowl3.jpg" width="300px" height="220px"/>
+            <h2>Shaka</h2>
+            <h4>Vase</h4>
+            <button>View Item</button>
+            </div>
+
+            <div>
+              <img src="./assets/img/bowl4.jpg" width="300px" height="220px"/>
+              <h2>Shaka</h2>
+              <h4>Vase</h4>
+              <button>View Item</button>
+              </div>
+            </div>
+
+            <div class="head-one">
+              <h3>Cups</h3>
+              </div>
+
+            <div class=features>
+              <div>
+                <img src="./assets/img/cup1.jpg" width="300px" height="220px"/>
+                <h2>Shaka</h2>
+                <h4>Vase</h4>
+                <button>View Item</button>
+                </div>
+        
+                <div>
+                  <img src="./assets/img/cup2.jpg" width="300px" height="220px"/>
+                  <h2>Shaka</h2>
+                  <h4>Vase</h4>
+                  <button>View Item</button>
+                  </div>
+        
+                  <div>
+                    <img src="./assets/img/cup3.jpg" width="300px" height="220px"/>
+                    <h2>Shaka</h2>
+                    <h4>Vase</h4>
+                    <button>View Item</button>
+                    </div>
+        
+                    <div>
+                      <img src="./assets/img/cup4.jpg" width="300px" height="220px"/>
+                      <h2>Shaka</h2>
+                      <h4>Vase</h4>
+                      <button>View Item</button>
+                      </div>
       </section>
+
+       <!-- footer items -->
+       <footer class="footer-style">
+        
+        <!-- Contact items -->
+        <div class="contact">
+          <h1>Contact Us</h1>
+          <p>Say Hello, and leave us a message!</p>
+          
+          <div class="contact-row">
+            
+            <div class="contact-column">
+              <form action="/action_page.php">
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" name="firstname" placeholder="Your name..">
+                <label for="l-name">Last Name</label>
+                <input type="text" id="ln-ame" name="lastname" placeholder="Your last name..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <div class="address">
+              <h3>Our Offices</h3>
+              <p>+27 092 262 12</p>
+              <p>naturapottery.co.za</p>
+              <p>34 Bree Street</p>
+              <p>8th Floor The Loft</p>
+              <p>Cape Town</p>
+              <p>8000</p>
+            </div>
+      
+            <div class="socials">
+              <h3>Keep Connected</h3>
+              <p>twitter</p>
+              <p>facebook</p>
+            </div>
+          </div>
+        </div>
+        
+     
+
+      </footer>
+      <div class="copyright">
+        <p>2021 @naturapottery. All Rights Reserved</p>
+        </div>
+
 
 
   </body>
