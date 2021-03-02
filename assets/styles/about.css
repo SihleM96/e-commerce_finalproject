@@ -1,15 +1,16 @@
 
 .head-one{
-    border-top: 0.5px solid #797d62;
-    border-bottom: 0.5px solid #797d62;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
     width: 89%;
     margin: 20px 70px;
+    padding: 10px 0px;
 }
 
 @media screen and (max-width: 768px) {
     .head-one{
-        border-top: 0.5px solid #797d62;
-        border-bottom: 0.5px solid #797d62;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
         width: 70%;
         margin: 20px 70px;
     }
@@ -24,6 +25,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+  
     
   }
   
@@ -36,17 +38,21 @@
 
 
 button{
-    margin: 20px 0px;
+    margin: 10px 0px;
     width: 130px;
     height: 30px;
-    border-radius: 30px;
-    border:2px solid #797d62;
+    border:1px solid black;
     background: none;
-    color: #797d62;
+    color: black;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
 }
-  
+
+
+button:hover{
+  background-color: rgb(39, 38, 38, 30);
+  color: rgb(201, 168, 77);
+}
 
   .features > img {
     margin: 0px 60px;  
@@ -79,6 +85,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(39, 38, 38, 30);
     
   }
   
@@ -88,13 +95,24 @@ button{
     gap: 20px;
   }
 
-  .container >div {
-  cursor: pointer;   
+.container h3 {
+  color: rgb(201, 168, 77);
   }
 
-  .container >div:hover {
-    opacity: 0.5;
+  .container button{
+    color: rgb(201, 168, 77);
+    text-align: left;
+    border: none;
+    cursor: pointer;  
     }
+
+.container button:hover{
+   background-color: rgb(201, 168, 77);
+   color:  rgb(39, 38, 38);
+   text-align: center;
+}
+
+
 
 /* Media query to change display options of featured products */
 @media screen and (max-width: 768px) {
@@ -110,23 +128,18 @@ button{
 }
 
 .overlay{
-  text-align: center;
-  background-color: cornflowerblue;
-}
+  text-align: justify;
+  background-color: rgb(39, 38, 38, 30);
+  color: white;
+  margin: 5px 0px;
 
-
-.video{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-
+  height: 120x;
 }
 
 /*styling footer */
 
 .footer-style{
-  background: #797d62;
+  background: rgb(39, 38, 38, 30);
   color: white;
   margin-top: 20px;
   padding: 20px;
@@ -136,7 +149,13 @@ button{
 
 .contact >h1{
   text-align: center;
+  color: rgb(201, 168, 77);
 }
+
+.address >h3{
+  color: rgb(201, 168, 77);
+}
+
 
 .contact >p{
   text-align: center;
@@ -166,21 +185,33 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #797d62;
-  border-radius: 20px;
-  border:1px solid white;
-  color: white;
+  background-color: rgb(39, 38, 38, 30);
+  border: 20px;
+  border: 0.5px solid rgb(201, 168, 77);
+  color: rgb(201, 168, 77);
   padding: 8px 20px;
   cursor: pointer;
 }
 
+input[type=submit]:hover {
+  background-color: rgb(201, 168, 77);
+  color: rgb(39, 38, 38, 30);
+}
 
-.socials{
+.socials >h3{
   min-width: 300px;
+  color: rgb(201, 168, 77);
+}
+
+.socials > img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .copyright{
-  background: #4c4e3f;
+  background: white;
+  color: black;
   width: 100%;
   height: 50px;
   text-align: center;
@@ -188,7 +219,89 @@ input[type=submit] {
 }
 
 hr{
-  border:  2px solid #df9280;
+  border:  0.1px solid black;
   margin: 5px 0px;
 }
 
+mark{
+  background-color: rgb(201, 168, 77);
+}
+
+/* Carousel Element */
+#carousel {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 5fr 1fr;
+  grid-template-areas:
+    "leftCaret content rightCaret"
+    "......... bullets ..........";
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+/* Carousel Carets */
+#carousel #carousel-left,
+#carousel #carousel-right {
+  background: rgb(39, 38, 38, 30);
+  border: none;
+  width: 40px;
+  outline: none;
+  font-size: 18px;
+  color: rgb(201, 168, 77);
+  transition: all 0.2s linear;
+}
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover {
+  color: black;
+}
+/* Carousel Grid Item Positioning */
+#carousel #carousel-left {
+  grid-area: leftCaret;
+}
+#carousel #carousel-right {
+  grid-area: rightCaret;
+}
+#carousel #carousel-container {
+  grid-area: content;
+  position: relative;
+  width: 50%;
+  padding: 2%;
+  margin: 10px ;
+}
+#carousel #carousel-bullets {
+  grid-area: bullets;
+}
+/* Carousel Bullet Styles */
+#carousel-bullets .carousel-bullet {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 2px;
+}
+
+#carousel #carousel-bullets .fas.fa-circle {
+  transition: all 0.2s linear;
+}
+#carousel #carousel-bullets .fas.fa-circle.active {
+  color: rgb(201, 168, 77);
+}
+/* Carousel Slide Styles */
+.carousel-slide {
+  opacity: 0;
+  z-index: -2;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}

@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="https://kit.fontawesome.com/206b3bb72f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles/landing.css" />
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
     <link rel="stylesheet" href="./assets/styles/about.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
   </head>
   <body>
    
     <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader"></div>
-    </div>
+ 
     <!-- Navigation Section -->
     <nav class="navbar">
-        <img src="./assets/img/logo.svg" alt="logo" class="logo" />
+      <div class="nav-icon">
+            <h4>Socials:</h4>
+        
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+   
+          <input type="search" id="search"  placeholder="search" name="search" > 
+      </div>
+   
+      <img src="./assets/img/logo.svg" alt="logo" class="logo" width="40%"  height="40%"/>
       <ul class="nav-links" id="nav-links">
         <li class="nav-link"><a href="index.html">Home</a></li>
         <li class="nav-link"><a href="shop.html">Shop</a></li>
         <li class="nav-link"><a href="register.html">Login/Register</a></li>
-        <li class="nav-link"><a href="#">MyCart</a></li>
+        <li class="nav-link"><a href="cart.html">MyCart</a></li>
+   
       </ul>
 
-      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
+      <button class="fas fa-bars"></button>
     </nav>
     <!-- Landing -->
+  
     <header class="landing">
       <h1>Pottery<br>Made With Love</h1>
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
         Curabitur cursus ex at ipsum auctor auctor.</p>
       <button>View Products</button>
     </header>
-
+ 
     <!-- featured items -->
     <div class="head-one">
-    <h3>Featured Items</h3>
+    <h3>Featured Items:</h3>
     </div>
 
     <section class="feature-wrapper" id="feature-wrapper">
@@ -46,38 +58,46 @@
 
         <div>
             <img src="./assets/img/bowl1.jpg" width="300px" height="220px"/>
-            <hr>
-            <h2>Night Skies</h2>
-            <h4>Bowls</h4>
-            <p>R430</p>
-            <button>View Item</button>
+        
+            <h3>Night Skies</h3>
+            <h4>bowl</h4>
+            <p>R400</p>
+            <p><mark>add to cart</mark></p>
+            <button id="myBtn">View Item</button>
+       
         </div>
 
         <div>
             <img src="./assets/img/vase2.jpg" width="300px" height="220px" />
-            <hr>
-            <h2>Hollow Lily</h2>
-            <h4>Vase</h4>
+        
+            <h3>Hollow Lily</h3>
+            <h4>vase</h4>
             <p>R540</p>
-            <button>View Item</button>
+            <p><mark>add to cart</mark></p>
+            <button id="myBtn">View Item</button>
+         
         </div>
 
         <div> 
             <img src="./assets/img/cup3.jpg" width="300px" height="220px"/>
-            <hr>
-            <h2>Misty Mug</h2>
-            <h4>Cups</h4>
+         
+            <h3>Misty</h3>
+            <h4>cup</h4>
             <p>R450</p>
-            <button>View Item</button>
+            <p><mark>add to cart</mark></p>
+            <button id="myBtn">View Item</button>
+        
         </div>
 
         <div>
         <img src="./assets/img/vase1.jpg" width="300px" height="220px"/>
-        <hr>
-        <h2>Shaka</h2>
-        <h4>Vase</h4>
+      
+        <h3>Salty</h3>
+        <h4>vase</h4>
         <p>R500</p>
-        <button>View Item</button>
+      <p><mark>add to cart</mark></p>
+      <button id="myBtn">View Item</button>
+   
         </div>
     </div>
 
@@ -91,9 +111,11 @@
            
             <div class="overlay">
               <div class="text">
-                <h3>John Doe</h3>
-                <p>shshs shsjs sjsj </p>
+                <h3>Handmade Ceramic Vase</h3>
+                <p>Ties any room together with its organic style.artisan crafted 
+                  and designed with a unique finish.</p>
               </div>
+              <button>View Items</button>
             </div>
         </div>
        
@@ -102,9 +124,11 @@
             <img src="./assets/img/bowls.jpg" width="400px" height="300px" />
             <div class="overlay">
               <div class="text">
-                <h3>John Doe</h3>
-                <p>shshs shsjs sjsj </p>
+                <h3>Handmade Ceramic Bowls</h3>
+                <p>A stylish organic design, artisan crafted 
+                  and designed with a unique finish</p>
               </div>
+              <button>View Items</button>
             </div>
         
         </div>
@@ -113,29 +137,32 @@
             <img src="./assets/img/cups.jpg" width="400px" height="300px"/>
             <div class="overlay">
               <div class="text">
-                <h3>John Doe</h3>
-                <p>shshs shsjs sjsj </p>
+                <h3>Handmade Ceramic Cups</h3>
+                <p>The perfect mug for a large serving
+                   of your favorite hot or cold beverage</p>
               </div>
+              <button>View Items</button>
             </div>
          
         </div>
 
         </div>
     </section-two>
-
-    <section-three  class="video">
-        <video width="1000" height="500" controls>
-            <source src="./assets/img/pottery.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-    </section-three> 
-
-    <section-four  class="carousel">
-      <h3>About Us</h3>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-           Curabitur cursus ex at ipsum auctor auctor.
-           Morbi at felis sed sapien <br>blandit vestibulum eu eu leo. 
-           In in odio purus. Fusce pharetra risus su</p>
+  <!-- Carousel -->
+<div id="carousel">
+  <!-- Carousel Container -->
+  <div id="carousel-container"></div>
+  <!-- Carousel Bullets -->
+  <div id="carousel-bullets"></div>
+  <!-- Carousel Buttons -->
+  <button id="carousel-left" onclick="changeSlide(-1)">
+    <i class="fas fa-angle-left"></i>
+  </button>
+  <button id="carousel-right" onclick="changeSlide(1)">
+    <i class="fas fa-angle-right"></i>
+  </button>
+</div>
+    
       </section-four> 
       
       <!-- footer items -->
@@ -171,8 +198,9 @@
       
             <div class="socials">
               <h3>Keep Connected</h3>
-              <p>twitter</p>
-              <p>facebook</p>
+              <p>Twitter</p>
+              <p>Facebook</p>
+              <p>Instagram</p>
             </div>
           </div>
         </div>
@@ -182,6 +210,7 @@
       </footer>
       <div class="copyright">
         <p>2021 @naturapottery. All Rights Reserved</p>
-        </div>
+      </div>
+     <script src="./assets/scripts/carousel.js"></script>>
     </body>
       </html>

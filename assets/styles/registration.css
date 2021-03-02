@@ -1,10 +1,14 @@
 .login-page{
-    width: 300px;
+    width: 500px;
     margin: auto;
+}
+.login-page > h1{
+    text-align: center;
+    margin: 20px 0px;
 }
 
 .form{
-    background-color: rgb(143, 138, 127);
+    background-color: white;
     padding: 20px;
 }
 
@@ -16,7 +20,7 @@
 }
 
 .form .message{
-    color: white;
+    color: black;
 }
 
 .form .message a{
